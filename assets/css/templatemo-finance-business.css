@@ -1420,7 +1420,12 @@ footer .contact-form button.filled-button:hover {
 		font-size: 16px;
 		align-self: center;
 	}
-}
+	.navbar {
+		margin-right: -100px;
+	   }
+	   .navbar-toggler{
+		   margin-right: 100px;
+	   }
 
 @media (max-width: 548px) {
 	
@@ -1428,7 +1433,31 @@ footer .contact-form button.filled-button:hover {
 		padding-left: 2px;
 		padding-top:5px ;
 		font-style: normal;
-		font-size: 14px;
+		font-size: 16px;
 		align-self: center;
+	}
+	.navbar {
+	 margin-right: -100px;
+	}
+	.navbar-toggler{
+		margin-right: 100px;
+	}
+	
+}
+
+@media (max-width: 450px) {
+	
+	.logo-text h2{
+		padding-left: 2px;
+		padding-top:5px ;
+		font-style: normal;
+		font-size: 15px;
+		align-self: center;
+	}
+	.navbar {
+	 margin-right: -100px;
+	}
+	.navbar-toggler{
+		margin-right: 100px;
 	}
 }
