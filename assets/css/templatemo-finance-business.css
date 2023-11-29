@@ -1092,6 +1092,7 @@ footer .contact-form button.filled-button:hover {
 }
 
 
+
 .page-heading {
 	margin-top: 10px;
 	text-align: center;
@@ -1272,9 +1273,16 @@ footer .contact-form button.filled-button:hover {
 
 /* Responsive Style */
 @media (max-width: 768px) {
-	.sub-header {
-		display: none;
-	}
+	
+		.sub-header {
+			margin-top: 0;
+			padding-top: 85px;
+			background-color: #00A79D;
+			line-height: 46px;
+		}
+
+		
+
 	.Modern-Slider .item h6 {
 	  margin-bottom: 15px;
 	  font-size: 18px;
@@ -1343,16 +1351,17 @@ footer .contact-form button.filled-button:hover {
 @media (max-width: 992px) {
 	.header{
 		position: fixed;
+		margin-top:0px;
+		padding-top: 8px;
+	}
+	.logo-text h2{
+		padding-top:5px ;
+		font-style: normal;
+		font-size: 18px;
+		align-self: center;
+	}
 
-	}
-	.navbar .logo-text {
-		position: fixed;
-		left: 30px;
-		top: 10px;
-	}
-	.navbar .logo-text {
-		width: auto;
-	}
+
 	.navbar:after {
 		display: none;
 	}
@@ -1383,5 +1392,26 @@ footer .contact-form button.filled-button:hover {
 	.navbar .navbar-nav .show>.nav-link {
 		color: #00A79D!important;
 		border-bottom: none!important;
+	}
+
+	.navbar .navbar-toggler-icon {
+		background-image: none;
+	}
+	.navbar .navbar-toggler {
+		border-color: #fff;
+		background-color: #fff;	
+		height: 36px;
+		outline: none;
+		border-radius: 0px;
+		position: absolute;
+		right: 30px;
+		top: -10px;
+	}
+	.navbar .navbar-toggler-icon:after {
+		content: '\f0c9';
+		color: #00A79D;
+		font-size: 18px;
+		line-height: 26px;
+		font-family: 'FontAwesome';
 	}
 }
