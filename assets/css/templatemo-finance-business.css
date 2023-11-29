@@ -1,14 +1,10 @@
-/* 
 
-TemplateMo - Finance Business
-
-https://templatemo.com/tm-545-finance-business
-
-*/
-
+:root{
+	scroll-behavior: smooth !important;
+}
 body {
 
-	scroll-behavior: smooth !important;
+	
   	font-family: 'Poppins', sans-serif;
   	overflow-x: hidden;
   	text-rendering: optimizeLegibility;
@@ -1413,5 +1409,26 @@ footer .contact-form button.filled-button:hover {
 		font-size: 18px;
 		line-height: 26px;
 		font-family: 'FontAwesome';
+	}
+}
+@media (max-width: 575px) {
+	
+	.logo-text h2{
+		padding-left: 3px;
+		padding-top:5px ;
+		font-style: normal;
+		font-size: 16px;
+		align-self: center;
+	}
+}
+
+@media (max-width: 548px) {
+	
+	.logo-text h2{
+		padding-left: 2px;
+		padding-top:5px ;
+		font-style: normal;
+		font-size: 14px;
+		align-self: center;
 	}
 }
