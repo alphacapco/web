@@ -12,7 +12,7 @@ body {
   	-moz-osx-font-smoothing: grayscale;
 }
 .divlogo{
-	padding-left: -20%;
+	margin-left: 10px;
 	display: inline-flex !important;
 	justify-content: space-around;
 }
