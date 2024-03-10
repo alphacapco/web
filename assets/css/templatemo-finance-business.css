@@ -98,7 +98,7 @@ a.border-button:hover {
 }
 
 .section-heading {
-	padding-top: 100px;
+	padding-top: 90px;
 	text-align: center;
 	margin-bottom:50px;
 }
@@ -591,6 +591,7 @@ ul.slick-dots {
 .service-item img {
 	width: 100%;
 	overflow: hidden;
+	height: 200px;
 }
 
 .service-item .down-content {
@@ -661,11 +662,18 @@ ul.slick-dots {
 	margin: 15px 0px;
 }
 
-.count-digit {
+.count-digittext{
     margin: 5px 0px;
     color: #00A79D;
     font-weight: 700;
     font-size: 36px;
+}
+.count-digittext span{
+	display: inline-block;
+    margin: 5px 0px;
+    color: #00A79D;
+    font-weight: 700;
+    font-size: 31px;
 }
 .count-title {
     font-size: 20px;
@@ -1090,10 +1098,9 @@ footer .contact-form button.filled-button:hover {
 
 
 .page-heading {
-	margin-top: 10px;
 	text-align: center;
-	height: 220px;
-	background-image: url(../images/page-heading-bg.jpg);
+	height: 120px;
+	/* background-image: url(../images/page-heading-bg.jpg); */
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1107,7 +1114,7 @@ footer .contact-form button.filled-button:hover {
 	font-size: 36px;
 	font-weight: 700;
 	letter-spacing: 2px;
-	margin-bottom: 18px;
+	margin-bottom: 25px;
 }
 
 .page-heading span {

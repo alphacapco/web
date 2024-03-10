@@ -7,7 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link rel="icon" href="F:\Downloads\Finance Business Free Website Template\site\assets\images\logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="assets\images\logo.png">
     <title>Alpha Cap Co.</title>
 
     <!-- Bootstrap core CSS -->
@@ -21,6 +22,222 @@
 Finance Business TemplateMo
 https://templatemo.com/tm-545-finance-business
 -->
+<style>
+
+a{
+  text-decoration: none;
+  color:#fff;;
+}
+  @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
+
+.card-container {
+    display: flex;
+    justify-items: space-evenly; /* Distribute space evenly between cards */
+    flex-wrap: wrap;
+}
+
+
+.cardemp {
+  flex: 1;
+  padding-top: 20px;
+  margin-top:40px !important ;
+  max-width: 450px;
+  margin: auto;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  transition: 0.3s;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow:0 0 0 8px rgb(170 166 166 / 13%);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+      flex-direction: column; /* Change layout to column when window width is 768px or less */
+      align-items: center; /* Center cards horizontally */
+  }
+}
+
+
+.card.is-active {
+  .card-header {
+    height: 80px;
+  }
+
+  .card-cover {
+    height:100%;
+    top: -50px;
+  }
+
+  .card-avatar {
+    transform: none;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+  }
+
+  .card-fullname,
+  .card-jobtitle {
+
+    left: 86px;
+    transform: none;
+  }
+
+  .card-fullname {
+
+    bottom: 18px;
+    font-size: 19px;
+  }
+
+  .card-jobtitle {
+    padding-top: 15px;
+    bottom: 16px;
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
+}
+
+.card-header {
+  position: relative;
+  display: flex;
+  height: 200px;
+  flex-shrink: 0;
+  width: 100%;
+  transition: 0.3s;
+  border: none !important;
+
+  * {
+    transition: 0.3s;
+  }
+}
+
+.card-cover {
+  width: 100%;
+  height: 100% ! IMPORTANT;
+  position: absolute;
+  height: 160px;
+  top: -20%;
+  left: 0;
+  will-change: top;
+  background-size: cover;
+  background-position: center;
+  filter: blur(30px);
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.card-avatar {
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 60%;
+  object-position: center;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-64px);
+}
+
+.card-fullname {
+  position: absolute;
+  bottom: 0;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateY(-10px) translateX(-50%);
+  left: 50%;
+  top: 78%;
+}
+
+.card-jobtitle {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  white-space: nowrap;
+  font-weight: 500;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0;
+
+  left: 50%;
+  transform: translateX(-50%) translateY(-7px);
+}
+
+.card-main {
+  position: relative;
+  flex: 1;
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+}
+
+.card-subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-desc {
+  line-height: 1.6;
+  color: #636b6f;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+}
+
+.card-social {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  /* margin-bottom: 30px; */
+  svg {
+    fill: rgb(165, 181, 206);
+    width: 16px;
+    display: block;
+    transition: 0.3s;
+  }
+  a {
+    color: #8797a1;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    background-color: rgba(93, 133, 193, 0.05);
+    border-radius: 50%;
+    margin-right: 10px;
+
+    &:hover {
+      svg {
+        fill: darken(rgb(165, 181, 206), 20%);
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+</style>
   </head>
 
   <body>
@@ -127,10 +344,10 @@ https://templatemo.com/tm-545-finance-business
         <div class="row">
           <div class="col-md-8">
             <h4>Request a call back right now ?</h4>
-            <span>Secure your Funds and reserv yourself now; we take limited investors. <br>Or<br>Call on <b>+91 94049 10036 </b></span>
+            <span>Secure your funds and reserve yourself now; we take limited investors. <br>Or<br>Call on <b><a href="tel:+919404910036">+91 94049 10036</a></b></span>  
           </div>
           <div class="col-md-4">
-            <a href="#contact" class="border-button">Contact Us</a><br>
+            <a href="tel:9404910036" class="border-button">Contact Us</a><br>
     
           </div>
         </div>
@@ -181,26 +398,89 @@ https://templatemo.com/tm-545-finance-business
       </div>
     </div>
     <!-- Services page end -->
+    <div class="fun-facts">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="left-content">
+              <span>Your the next hurry up...!</span>
+              <h2>Our solutions for your <em>economical growth</em></h2>
+              <p>Be the next success story – seize the opportunity now! Hurry up and explore our tailored solutions designed for your economic growth. With a focus on investment. Ensuring you don't miss out on the next big breakthrough in the business world.</p>
+              <a href="" class="filled-button">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digittext">
+                    <span class="count-digit">800</span>
+                    <span>+</span>
+                  </div>
+                  <div class="count-title">Work Hours and increasing</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digittext">
+                    <span class="count-digit">10</span>
+                    <span>%</span>
+                  </div>
+                  <div class="count-title">Assured Monthly return.</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digittext">
+                    <span class="count-digit">25</span>
+                    <span>+</span>
+                  </div>
+                  <div class="count-title">Trusted Clients and Investors</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digittext">
+                    <span>₹</span>
+                    <span class="count-digit">630020</span>
+                    <span>+</span>
+                  </div>
+                  <div class="count-title">Fund Management</div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     
     <!-- About Page Content -->
-    <div class="page-heading header-text" id="about">
+    <!-- <div class="page-heading header-text" id="about">
       <div class="container" >
         <div class="row" >
           <div class="col-md-12" >
+
             <h1>About Us</h1>
             <span>We have over 5+ years of experience</span>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     
-    <div class="more-info" >
+    <div class="more-info" id="about">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12" >
+            <div class="section-heading">
+              <h2>About<em> Us</em></h2>
+              <span>We have over 5+ years of experience</span>
+            </div>
             <div class="more-info-content">
               <div class="row">
                 <div class="col-md-6">
+
                   <div class="left-image">
                     <img src="assets/images/more-info.jpg" alt="">
                   </div>
@@ -220,49 +500,70 @@ https://templatemo.com/tm-545-finance-business
       </div>
     </div>
 
+    <div class="card-container">
+    <div class="cardemp" data-state="#about">
+      <div class="card-header">
+        <div class="card-cover" style="background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')"></div>
+        <img class="card-avatar" src="assets\images\founder.jpg" alt="avatar" />
+        <h1 class="card-fullname">Mr. Tejas S. Bodke</h1>
+        <h2 class="card-jobtitle">Founder</h2>
+      </div>
+      <div class="card-main">
+        <div class="card-section is-active" id="about">
+          <div class="card-content">
+            <div class="card-subtitle"><i class='bx bxs-quote-left'></i></div>
+            <p class="card-desc">Our Founder is the visionary behind our company's inception, the driving force who sparked the idea and brought it to life. They possess unwavering determination, creativity, and passion, paving the way for our journey towards success.
+            </p>
+          </div>
+          <div class="card-social">
+            <a href="https://www.linkedin.com/in/tejasbodke"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><!--Linkedin link-->
+              <path d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" /></svg></a>
 
-    <div class="fun-facts">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="left-content">
-              <span>Your the next hurry up...!</span>
-              <h2>Our solutions for your <em>economical growth</em></h2>
-              <p>Be the next success story – seize the opportunity now! Hurry up and explore our tailored solutions designed for your economic growth. With a focus on investment. Ensuring you don't miss out on the next big breakthrough in the business world.</p>
-              <a href="" class="filled-button">Read More</a>
-            </div>
+              <a href="https://www.instagram.com/tej_bodke?igsh=MzNlNGNkZWQ4Mg=="><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--Instagram link-->
+                <path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+                <path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+                <path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" /></svg></a>
+
+            <a href="https://www.facebook.com/tejbodke8055?mibextid=ZbWKwL"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <!--Facebook link-->
+                <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" /></svg></a>
           </div>
-          <div class="col-md-6 align-self-center">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="count-area-content">
-                  <div class="count-digit">750</div>
-                  <div class="count-title">Work Hours and increasing</div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="count-area-content">
-                  <div class="count-digit">48%</div>
-                  <div class="count-title"> % p.a. <br> Great Return</div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="count-area-content">
-                  <div class="count-digit">13</div>
-                  <div class="count-title">Trusted Clients and connectings</div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="count-area-content">
-                  <div class="count-digit">350020</div>
-                  <div class="count-title">Fund Management</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </div>    
       </div>
     </div>
+
+    
+    <div class="cardemp" data-state="#about">
+      <div class="card-header">
+        <div class="card-cover" style="background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')"></div>
+        <img class="card-avatar" src="https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" alt="avatar" />
+        <h1 class="card-fullname">Mr. Gaurav S. Dhakane</h1>
+        <h2 class="card-jobtitle">Co-Founder</h2>
+      </div>
+      <div class="card-main">
+        <div class="card-section is-active" id="about">
+          <div class="card-content">
+            <div class="card-subtitle"><i class='bx bxs-quote-left'></i></div>
+            <p class="card-desc">Our Co-founder is the invaluable partner who joined forces with our Founder. Together, they bring complementary skills, expertise, and shared dedication, forming the strong foundation upon which our company thrives.
+            </p>
+          </div>
+          <div class="card-social">
+            <a href="https://www.linkedin.com/in/gaurav-dhakane-gsd-303b88283"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><!--Linkedin link-->
+              <path d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" /></svg></a>
+
+              <a href="https://www.instagram.com/gaurav_dhakane?igsh=OGQ5ZDc2ODk2ZA=="><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--Instagram link-->
+                <path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+                <path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+                <path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" /></svg></a>
+
+            <a href="https://www.facebook.com/gaurav.dhakane.5?mibextid=ZbWKwLL"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <!--Facebook link-->
+                <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" /></svg></a>
+
+
+          </div>
+        </div>    
+      </div>
+    </div>
+  </div>
 
     <div class="callback-form"  >
       <div class="container">
@@ -273,7 +574,8 @@ https://templatemo.com/tm-545-finance-business
               <span></span>
             </div>
             <div class="contact-form">
-              <form  action="" method="post">
+              <form action="send_email.php" method="post">
+
                 <div class="row">
                   <div class="col-lg-4 col-md-12 col-sm-12">
                     <fieldset>
@@ -297,7 +599,7 @@ https://templatemo.com/tm-545-finance-business
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <button type="button" id="#home" class="border-button">Send Message</button>
+                      <button type="submit" class="border-button">Send Message</button>
                     </fieldset>
                   </div>
                 </div>
@@ -413,8 +715,9 @@ https://templatemo.com/tm-545-finance-business
         <div class="row">
           <div class="col-md-12">
             <p>Copyright &copy; 2023 Alpha Capital Company.
+            <p>A Subsidiary managed by Tej Group Pvt. Ltd.</p>
+            <p >Made in <b><span style="color: orange;">भा</span>र<span style="color: rgb(0, 255, 0);">त</span></b> with 	<span style="color: rgb(0, 238, 238);">&#x2764;</span></p>
             
-            <p >Made in <span style="color: orange;">भा</span>र<span style="color: rgb(0, 255, 0);">त</span> with 	<span style="color: rgb(0, 238, 238);">&#x2764;</span></p>
           </div>
         </div>
       </div>
@@ -439,6 +742,28 @@ https://templatemo.com/tm-545-finance-business
           t.style.color='#fff';
           }
       }
+
+      const buttons = document.querySelectorAll(".card-buttons button");
+const sections = document.querySelectorAll(".card-section");
+const card = document.querySelector(".card");
+
+const handleButtonClick = (e) => {
+  const targetSection = e.target.getAttribute("data-section");
+  const section = document.querySelector(targetSection);
+  targetSection !== "#about"
+    ? card.classList.add("is-active")
+    : card.classList.remove("is-active");
+  card.setAttribute("data-state", targetSection);
+  sections.forEach((s) => s.classList.remove("is-active"));
+  buttons.forEach((b) => b.classList.remove("is-active"));
+  e.target.classList.add("is-active");
+  section.classList.add("is-active");
+};
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", handleButtonClick);
+});
+
     </script>
   </body>
 </html>
