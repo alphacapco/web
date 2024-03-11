@@ -77,10 +77,10 @@ https://templatemo.com/tm-545-finance-business
     <div class="sub-header">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-xs-12">
+          <div class="col-md-12 col-xs-12">
             <ul class="left-info">
               <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri</a></li>
-              <li><a href="#"><i class="fa fa-phone"></i>+91 94049 10036</a></li>
+              <li><a href="tel:+919404910036"><i class="fa fa-phone"></i>+91 94049 10036</a></li>
             </ul>
           </div>
           <!-- <div class="col-md-4">
@@ -521,7 +521,25 @@ https://templatemo.com/tm-545-finance-business
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/accordions.js"></script>
 
+
     <script language = "text/Javascript"> 
+   document.addEventListener("DOMContentLoaded", function() {
+    // Get all the navigation links
+    var navLinks = document.querySelectorAll(".navbar-nav li a");
+
+    // Add click event listener to each navigation link
+    navLinks.forEach(function(link) {
+      link.addEventListener("click", function(event) {
+        // Collapse the navbar
+        var navbarCollapse = document.querySelector(".navbar-collapse");
+        if (navbarCollapse.classList.contains("show")) {
+          navbarCollapse.classList.remove("show");
+        }
+      });
+    });
+  });
+  
+
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
       function clearField(t){                   //declaring the array outside of the
       if(! cleared[t.id]){                      // function makes it static and global
@@ -532,10 +550,10 @@ https://templatemo.com/tm-545-finance-business
       }
 
       const buttons = document.querySelectorAll(".card-buttons button");
-const sections = document.querySelectorAll(".card-section");
-const card = document.querySelector(".card");
+      const sections = document.querySelectorAll(".card-section");
+      const card = document.querySelector(".card");
 
-const handleButtonClick = (e) => {
+  const handleButtonClick = (e) => {
   const targetSection = e.target.getAttribute("data-section");
   const section = document.querySelector(targetSection);
   targetSection !== "#about"
