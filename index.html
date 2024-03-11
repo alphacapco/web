@@ -96,6 +96,7 @@ https://templatemo.com/tm-545-finance-business
     </div>
 
     <!-- Page Content -->
+    <div class="content">
     <!-- Banner Starts Here -->
     <div class="main-banner header-text" id="top">
         <div class="Modern-Slider">
@@ -143,7 +144,7 @@ https://templatemo.com/tm-545-finance-business
     </div>
 
     <!-- Services page start -->
-    <div class="services" id="services">
+    <div class="services section" id="services">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -257,7 +258,7 @@ https://templatemo.com/tm-545-finance-business
       </div>
     </div> -->
     
-    <div class="more-info" id="about">
+    <div class="more-info section" id="about">
       <div class="container">
         <div class="row">
           <div class="col-md-12" >
@@ -297,7 +298,7 @@ https://templatemo.com/tm-545-finance-business
         <h2 class="card-jobtitle">Founder</h2>
       </div>
       <div class="card-main">
-        <div class="card-section is-active" id="about">
+        <div class="card-section is-active" id="#about">
           <div class="card-content">
             <div class="card-subtitle"><i class='bx bxs-quote-left'></i></div>
             <p class="card-desc">Our Founder is the visionary behind our company's inception, the driving force who sparked the idea and brought it to life. They possess unwavering determination, creativity, and passion, paving the way for our journey towards success.
@@ -353,11 +354,11 @@ https://templatemo.com/tm-545-finance-business
     </div>
   </div>
 
-    <div class="callback-form"  >
+    <div class="callback-form section" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="section-heading" id="contact">
+            <div class="section-heading" >
               <h2>Request a <em>call back</em></h2>
               <span></span>
             </div>
@@ -511,6 +512,8 @@ https://templatemo.com/tm-545-finance-business
       </div>
     </div>
 
+  </div><!--content div-->
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -521,11 +524,12 @@ https://templatemo.com/tm-545-finance-business
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/accordions.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script language = "text/Javascript"> 
    document.addEventListener("DOMContentLoaded", function() {
     // Get all the navigation links
-    var navLinks = document.querySelectorAll(".navbar-nav li a");
+    var navLinks = document.querySelectorAll(".nav-item a");
 
     // Add click event listener to each navigation link
     navLinks.forEach(function(link) {
